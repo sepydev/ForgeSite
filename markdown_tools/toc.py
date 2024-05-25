@@ -13,7 +13,7 @@ def get_new_toc():
 
 
 def get_readme():
-    with open("README.md", "r") as f:
+    with open("README.md", "r", encoding="utf_8") as f:
         return f.read()
 
 
