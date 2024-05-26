@@ -31,3 +31,6 @@ google-auth-oauthlib==1.0.0
 
 pyotp==2.9.0
 qrcode==7.4.2
+
+django-htmx==1.17.3
+django-browser-reload==1.12.1
