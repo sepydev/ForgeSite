@@ -34,3 +34,5 @@ qrcode==7.4.2
 
 django-htmx==1.17.3
 django-browser-reload==1.12.1
+django-allauth==0.63.2
+django-widget-tweaks==1.5.0
