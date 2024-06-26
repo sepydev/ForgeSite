@@ -31,6 +31,10 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "django_extensions",
     "rest_framework_jwt",
+    "widget_tweaks",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
     "django_htmx",
     "django_browser_reload",
 ]
@@ -58,6 +62,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django_htmx.middleware.HtmxMiddleware",
     "django_browser_reload.middleware.BrowserReloadMiddleware",
+    "allauth.account.middleware.AccountMiddleware",
 ]
 
 ROOT_URLCONF = "config.urls"
