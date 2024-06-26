@@ -1,0 +1,23 @@
+{% extends 'admin_panel/admin_panel_base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block sidebar %}
+
+    <h3>{% translate "Website Pages" %}</h3>
+    <hr>
+    {% for website_page in website_pages %}
+        <button
+
+                hx-get="{% url 'admin_panel:website_pages_change' website_page.pk %}"
+                hx-target="#admin-panel-content"> {{ website_page.title }}</button>
+
+        </a>
+    {% endfor %}
+
+{% endblock %}
+
+{% block content %}
+    <div id="admin-panel-content"></div>
+{% endblock %}
